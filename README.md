@@ -17,12 +17,12 @@ Once the categorical encoding was completed, I applied standardization technique
 
  ### Experiments and results:
 
-The performance of the three methods and in first method we concated the both test and train data and then encoded and then standardized the data. Then Split the dataframe into Train and test with 33 percent as test data and then during Linear regression model we get Rmse (Root Mean Square Error) as 0.71. During Lasso model we get Rmse (Root Mean Square Error) as 0.71.
+In the first approach, the data preprocessing involved concatenating the test and train datasets, followed by encoding and standardizing the combined data. Subsequently, the dataframe was split into training and test sets with 33 percent allocated to the test data. The Linear Regression model produced a Root Mean Square Error (RMSE) of 0.71, and the Lasso model also yielded an RMSE of 0.71.
 
-In second method, during preprocessing of data, we sorted it year wise and then used padding but we had few null values we dropped those rows then separating the output column form the data frame and then we used label encoder to convert the location (categorical) in to numerical and then applied standardization to the data set. During Linear Regression and Lasso Regression we got 0.60 as Rmse in both models. So we can conclude this might not be the best method, there can be more better methods.
+The second methodology entailed sorting the data chronologically and employing padding. Any rows with null values were removed, and the output column was separated from the dataframe. Subsequently, label encoding was applied to convert the categorical location variable into numerical format, followed by standardization of the dataset. Both Linear Regression and Lasso Regression models were executed, resulting in an identical RMSE of 0.60. However, it was inferred that this method may not be optimal, suggesting the potential existence of more effective approaches.
 
-In AutoMl method, LGBM Regressor is found to be best method during time budget of 10 minutes. It took 9.6 mins to find out these with each of it’s respective Rmse scores.  
+The third method, AutoML, identified the LGBM Regressor as the most effective model within a time budget of 10 minutes, achieving its respective RMSE scores in 9.6 minutes.
 
-Then we used Feature selection Method to find which feature is contributing more towards the output of regressor. We find here that there are 3,4 features which are contributing more as compared to others. Using correlation heatmap below also we can confirm those.
+Feature selection was then employed to identify the key contributors to the regressor's output. The analysis revealed that a subset of 3 to 4 features significantly influenced the output, a conclusion supported by a correlation heatmap.
 
-During the prediction phase, given test data is used to predict the Next Week’s Death Numbers   by using Different Regression Models and the performance of those models with rmse scores is found out, be it for Linear or Lasso or other methods.
+During the prediction phase, the test data was utilized to forecast the upcoming week's death numbers using various regression models. The performance of these models, as measured by their RMSE scores, was carefully evaluated, encompassing Linear Regression, Lasso Regression, and other methodologies.
