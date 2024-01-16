@@ -10,7 +10,9 @@ The objective of this project is to predict the next week Death’s due to Covid
 •	Test.csv - Contains the details week wise from onset of Covid Jan 2020 to June 2022
 
 ### Methodology
-Here I joined train data and test data by concat method and started data preprocessing by replacing the empty or NaN with null values and then separating the output column from the concated data frame and then we used label encoder to convert the location (categorical feature) into numerical feature and then we applied standardization methods to the data frame to get our preprocessed dataframe on which we can make models.
+In my methodology, I commenced by concatenating the training and testing datasets using the concat method. Subsequently, I initiated the data preprocessing phase by addressing empty or NaN values and replacing them with null values. Following this, I proceeded to isolate the output column from the concatenated data frame. To handle the categorical nature of the 'location' feature, I employed label encoding, thereby converting it into a numerical format.
+
+Once the categorical encoding was completed, I applied standardization techniques to the entire data frame. This involved scaling the features to ensure uniformity and enhance the performance of subsequent machine learning models. The resulting preprocessed data frame serves as a robust foundation for building and training models.
 
 
  ### Experiments and results:
